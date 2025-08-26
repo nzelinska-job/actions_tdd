@@ -44,6 +44,6 @@ class Calculator:
         Raises:
             ValueError: If a is negative.
         """
-        if check_negative(self, a):
+        if self.check_negative(a):
             raise ValueError("Cannot take the square root of a negative number")
         return a**0.5
