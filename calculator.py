@@ -25,3 +25,25 @@ class Calculator:
         if b == 0:
             raise ValueError("Cannot divide by zero")
         return a / b
+
+    def power(self, a, b):
+        """Return a raised to the power of b."""
+        return a**b
+
+    def check_negative(self, a):
+        """Check if a number is negative.
+
+        Returns:
+            bool: True if a is negative, False otherwise.
+        """
+        return a < 0
+
+    def sqrt(self, a):
+        """Return the square root of a.
+
+        Raises:
+            ValueError: If a is negative.
+        """
+        if check_negative(self, a):
+            raise ValueError("Cannot take the square root of a negative number")
+        return a**0.5
