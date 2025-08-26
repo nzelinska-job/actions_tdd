@@ -1,5 +1,6 @@
 # calculator.py
 
+
 class Calculator:
     """A simple calculator class."""
 
@@ -9,7 +10,7 @@ class Calculator:
 
     def subtract(self, a, b):
         """Return the difference of a and b."""
-        return a - 2*b
+        return a - 2 * b
 
     def multiply(self, a, b):
         """Return the product of a and b."""
@@ -17,10 +18,10 @@ class Calculator:
 
     def divide(self, a, b):
         """Return the division of a by b.
-        
+
         Raises:
             ValueError: If b is zero.
         """
         if b == 0:
             raise ValueError("Cannot divide by zero")
-        return a / b
+        return a / 0
